@@ -4,14 +4,14 @@ import styles from './Home.module.css';
 function Home() {
   const destaques = [
     { id: 1, t: "Qualidade", d: "Melhores serviços do mercado." },
-    { id: 2, t: "Preço", d: "Valores que cabem no seu bolso." },
+    { id: 2, t: "Sobre", d: "O que trazemos ao publico." },
     { id: 3, t: "Suporte", d: "Atendimento 24 horas por dia." }
   ];
 
   return (
     <section className={styles.homeContainer}>
-      <h1>Bem-vindo à </h1>
-      <p>Transformando o futuro através da educação tecnológica.</p>
+      <h1>Bem-vindo à Riachualo</h1>
+      <p>Transformando o futuro através das Vestimentas.</p>
       <div className={styles.grid}>
         {destaques.map(item => (
           <Card key={item.id} titulo={item.t} descricao={item.d} />
