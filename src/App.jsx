@@ -7,14 +7,13 @@ import Contato from './pages/Contato/Contato'
 import Extra from './pages/Extra/Extra'
 import NotFound from './pages/NotFound/NotFound'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <Navbar />
-      <main style={{ minHeight: '80vh', padding: '20px' }}>
+      <main>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/sobre' element={<Sobre />} />
@@ -24,6 +23,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   )
 }
